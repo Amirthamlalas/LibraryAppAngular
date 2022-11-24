@@ -13,6 +13,7 @@ import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { EdiBookComponent } from './edi-book/edi-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myroute:Routes =[
 
@@ -31,6 +32,26 @@ const myroute:Routes =[
   {
     path :"entry",
     component : BookEntryComponent
+  },
+  {
+    path :"search",
+    component : SearchBookComponent
+  },
+  {
+    path :"edit",
+    component : EdiBookComponent
+  },
+  {
+    path :"delete",
+    component : DeleteBookComponent
+  },
+  {
+    path :"issue",
+    component : IssueBookComponent
+  },
+  {
+    path :"view",
+    component : ViewBookComponent
   }
 ]
 
@@ -46,7 +67,8 @@ const myroute:Routes =[
     DeleteBookComponent,
     EdiBookComponent,
     IssueBookComponent,
-    SearchBookComponent
+    SearchBookComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
