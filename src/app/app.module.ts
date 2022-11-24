@@ -4,8 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
+const myroute:Routes =[
+
+  {
+    path :"",
+    component : AdminLoginComponent
+  }
+]
 
 
 @NgModule({
@@ -15,9 +22,14 @@ import { Routes } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+function forRoot(myroute: Routes): any[] | import("@angular/core").Type<any> | import("@angular/core").ModuleWithProviders<{}> {
+  throw new Error('Function not implemented.');
+}
+
