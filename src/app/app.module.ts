@@ -5,12 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 const myroute:Routes =[
 
   {
     path :"",
     component : AdminLoginComponent
+  },
+  {
+    path :"register",
+    component : UserRegistrationComponent
   }
 ]
 
@@ -18,7 +23,8 @@ const myroute:Routes =[
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    UserRegistrationComponent
   ],
   imports: [
     BrowserModule,
