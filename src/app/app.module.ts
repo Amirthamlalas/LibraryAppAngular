@@ -12,6 +12,7 @@ import { ViewBookComponent } from './view-book/view-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { EdiBookComponent } from './edi-book/edi-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
+import { SearchBookComponent } from './search-book/search-book.component';
 
 const myroute:Routes =[
 
@@ -44,7 +45,8 @@ const myroute:Routes =[
     ViewBookComponent,
     DeleteBookComponent,
     EdiBookComponent,
-    IssueBookComponent
+    IssueBookComponent,
+    SearchBookComponent
   ],
   imports: [
     BrowserModule,
