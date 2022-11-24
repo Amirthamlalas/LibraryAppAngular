@@ -10,6 +10,7 @@ import { UserLoginComponent } from './user-login/user-login.component';
 import { BookEntryComponent } from './book-entry/book-entry.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
+import { EdiBookComponent } from './edi-book/edi-book.component';
 
 const myroute:Routes =[
 
@@ -40,7 +41,8 @@ const myroute:Routes =[
     UserLoginComponent,
     BookEntryComponent,
     ViewBookComponent,
-    DeleteBookComponent
+    DeleteBookComponent,
+    EdiBookComponent
   ],
   imports: [
     BrowserModule,
