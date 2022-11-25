@@ -4,81 +4,25 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xxl-4" *ngFor = "let i of data">
 
 
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                
+                 
 
                     <div class="card" >
-                        <img height="400px" src="https://img.etimg.com/photo/msid-53575599,quality-100/.jpg" class="card-img-top" alt="...">
+                        <img height="400px" src="{{i.img}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Harry Potter And The Cursed Child</p>
+                          <p class="card-text">Title : {{i.title}}</p>
+                          <p class="card-text">Price : {{i.price}}</p>
                           
                         </div>
                       </div>
                 </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="400px" src="https://specials-images.forbesimg.com/imageserve/5d28f9614c687b00085c8ded/The-Lord-Of-The-Rings/960x0.jpg?fit=scale" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">The-Lord-Of-The-Rings</p>
-                         
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="400px" src="https://marketing.prowritingaid.com/GardensoftheMoonCover.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">The Gardens of the Moon</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img height="400px" src="https://images-eu.ssl-images-amazon.com/images/I/71e9MY-XE9L._AC._SR360,460.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Ruskin Bond</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="400px" src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1646849115-41oigHHgNAL._SL500_.jpg?crop=1xw:1xh;center,top&resize=480:*" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Night Circus</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="400px" src="https://images-eu.ssl-images-amazon.com/images/I/71FEZm-lISL._AC._SR360,460.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">House of the dragon</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card" >
-                        <img height="400px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ-dtOFP1dYJ9AvvuOk6totzXtT9RSzYzALg&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">The house of always</p>
-                        </div>
-                      </div>
-                      </div>
-                      <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="card" >
-                            <img height="400px" src="https://static.wixstatic.com/media/c54aca_e0f77cd6da3f4754b3b56e98aaf005a7~mv2.jpg/v1/fit/w_280,h_420,q_75/c54aca_e0f77cd6da3f4754b3b56e98aaf005a7~mv2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <p class="card-text">The Phantom Danger</p>
-                            </div>
-                          </div>
-                      </div>
-                
+              </div>
             </div>
 
 
-        </div>
+        
     </div>
 </div>
