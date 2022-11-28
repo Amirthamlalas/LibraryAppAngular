@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./edi-book.component.css']
 })
 export class EdiBookComponent {
+  title=""
 
+  edit=()=>{
+    let data : any={
+      "title":this.title
+    }
+    console.log(data)
+  }
 }

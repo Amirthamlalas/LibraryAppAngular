@@ -14,6 +14,7 @@ import { EdiBookComponent } from './edi-book/edi-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myroute:Routes =[
 
@@ -73,7 +74,8 @@ const myroute:Routes =[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
